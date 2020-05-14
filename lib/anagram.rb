@@ -11,7 +11,7 @@ class Anagram
         detected << awords
       end
     end
-    if nuarray.empty?
+    if detected.empty?
       return detected
     else
       return detected
