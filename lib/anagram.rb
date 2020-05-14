@@ -8,9 +8,9 @@ class Anagram
   end
   def match(array)
     detected = []
-    array.each do |awords|
+    array.each do |word|
       binding.pry
-      if awords.split('').sort == @words.split('').sort
+      if word.split('').sort == @words.split('').sort
         detected << awords
       end
     end
