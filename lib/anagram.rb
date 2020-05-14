@@ -1,4 +1,6 @@
 # Your code goes here!
+require "pry"
+
 class Anagram
   attr_accessor :words
   def initialize(word)
@@ -7,6 +9,7 @@ class Anagram
   def match(array)
     detected = []
     array.each do |awords|
+      binding.pry
       if awords.split('').sort == @words.split('').sort
         detected << awords
       end
