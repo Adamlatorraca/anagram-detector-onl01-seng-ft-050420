@@ -10,7 +10,7 @@ class Anagram
     detected = []
     array.each do |ana|
       if ana.split('').sort == @words.split('').sort
-        detected << awords
+        detected << ana
       end
     end
     if detected.empty?
