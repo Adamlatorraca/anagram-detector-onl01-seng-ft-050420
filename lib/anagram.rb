@@ -5,16 +5,16 @@ class Anagram
     @words = word
   end
   def match(array)
-    nuarray = []
+    detected = []
     array.each do |awords|
       if awords.split('').sort == @words.split('').sort
-        nuarray << awords
+        detected << awords
       end
     end
     if nuarray.empty?
-      return nuarray
+      return detected
     else
-      return nuarray
+      return detected
     end
   end
 end
